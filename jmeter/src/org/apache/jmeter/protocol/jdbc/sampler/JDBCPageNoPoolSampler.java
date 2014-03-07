@@ -95,10 +95,10 @@ public class JDBCPageNoPoolSampler extends JDBCSampler {
 	protected byte[] execute(Connection conn) throws SQLException,
 			UnsupportedEncodingException, IOException,
 			UnsupportedOperationException {
-		log.info("executing jdbc");
+		log.info("executing jdbc query");
 		Statement stmt = null;
 		Connection newConn = null;
-		log.info("new connection established");
+		log.info("connection established");
 		try {
 		    newConn = DataSourceElement.getConnection(getDataSource());
 		    // Based on query return value, get results
